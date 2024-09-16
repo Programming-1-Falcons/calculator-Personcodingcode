@@ -1,6 +1,55 @@
-op = input("What are you doing to your cows? +, -, /, or *?:")
+op = input("What are you doing to your cows? +, -, /, //, **, or *?:")
 num1 = input("How many cows do you have :")
 num2 = input("What number is affecting your cows? :")
 if op == "+":
-  result = num1+num2
+  result = int(num1)+int(num2)
   print(num1, op, num2, "=", result)
+elif op == "-":
+  result = int(num1)-int(num2)
+  print(num1, op, num2, "=", result)
+elif op == "/":
+    if num2 == 0:
+      print("Your math teacher will kill the cows.")
+    else:
+      result = int(num1)/int(num2)
+      print(num1, op, num2, "=", result)
+elif op == "*":
+  result = int(num1)*int(num2)
+  print(num1, op, num2, "=", result)
+elif op == "//":
+    if num2 == 0:
+      print("Your math teacher will kill the cows.")
+    else:
+      result = int(num1)//int(num2)
+      print(num1, op, num2, "=", result)
+elif op == "**":
+  result = int(num1)**int(num2)
+  print(num1, op, num2, "=", result)
+while True:
+  op = input("What are you doing to your cows? +, -, /, //, **, or *?:")
+  num1 = input("How many cows do you have :")
+  num2 = input("What number is affecting your cows? :")
+  if op == "+":
+    result = int(num1)+int(num2)
+    print(num1, op, num2, "=", result)
+  elif op == "-":
+    result = int(num1)-int(num2)
+    print(num1, op, num2, "=", result)
+  elif op == "/":
+    if num2 == 0:
+      print("Your math teacher will kill the cows.")
+    else:
+      result = int(num1)/int(num2)
+      print(num1, op, num2, "=", result)
+  elif op == "*":
+    result = int(num1)*int(num2)
+    print(num1, op, num2, "=", result)
+  elif op == "//":
+    if num2 == 0:
+      print("Your math teacher will kill the cows.")
+    else:
+      result = int(num1)//int(num2)
+      print(num1, op, num2, "=", result)
+  elif op == "**":
+    result = int(num1)**int(num2)
+    print(num1, op, num2, "=", result)
