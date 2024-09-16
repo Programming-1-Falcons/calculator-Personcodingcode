@@ -1,0 +1,6 @@
+op = input("What are you doing to your cows? +, -, /, or *?:")
+num1 = input("How many cows do you have :")
+num2 = input("What number is affecting your cows? :")
+if op == "+":
+  result = num1+num2
+  print(num1, op, num2, "=", result)
